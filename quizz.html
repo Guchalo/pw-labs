@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>
+        Benfica
+    </title>
+    <meta charset="utf-8">
+    <meta name="author" content="Gonçalo Nunes">
+    <meta name="description" content="Website sobre Benfica">
+    <meta name="keywords" content="palavras chave">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Benfica
+        </h1>
+        <img src="image/Benfica.png" alt="Benfica">
+    </header>
+    <nav>
+        <p>
+
+            <b><a href="index.html">Introdução</a></b>
+            <a href="local.html">Localização</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="info.html">Informação</a>
+
+        </p>
+    </nav>
+    <section>
+
+        <h3>
+            Quizz
+        </h3>
+
+        <p> Dentro desta página vai ser efectuado um quizz sobre o Benfica para testar os seus conhecimentos</p>
+
+        <form method="post" action="mailto:goncalo.coelhonunes@gmail.com" autocomplete="on">
+
+            <fieldset>
+                <legend> Quizz sobre o Benfica</legend>
+            </fieldset>
+
+            <fieldset>
+
+                <title>Info</title>
+                <p>Nome: <input type="text" name="nome" placeholder="Gonçalo" required></p>
+                <p>Apelido: <input type="text" name="apelido" placeholder="Nunes" required></p>
+                <p>Data de nascimento: <input type="date" name="data" required></p>
+                <p><input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </p>
+                <p>E-mail: <input type="email" name="email" autocomplete="off" required></p>
+                <input type="submit" value="Envie os dados">
+
+            </fieldset>
+
+            <fieldset>
+
+                <title>Perguntas</title>
+                <p>Nome de um jogador: <input type="text" name="nomeJ">Número do jogador: <input type="number"
+                        name="nomeJ"></p>
+                <p>Ano de fundação do clube: <input type="number" name="ano" size="4" maxlength="4"> </p>
+                <p>Nº de Titulos na Primeira Liga(Escolha apenas uma opção): 34<input type="checkbox" name="nomeJ">
+                    35<input type="checkbox" name="nomeJ"> 36<input type="checkbox" name="nomeJ"> 37<input
+                        type="checkbox" name="nomeJ"></p>
+                <p>
+                    Nome do Presidente do clube <select name="pres">
+                        <option value="Jorge Jesus">Jorge Jesus</option>
+                        <option value="Mantorras">Mantorras</option>
+                        <option value="Rui Costa">Rui Costa</option>
+                        <option value="Eliseu">Eliseu</option>
+                    </select>
+                </p>
+                <p>
+                    Qual a mascote do clube <input list="mascotes" name="mascotes">
+                    <datalist id="mascotes">
+                        <option value="Leão">
+                        <option value="Águia">
+                        <option value="Dragão">
+                        <option value="Foca">
+                        <option value="Lontra">
+                    </datalist>
+                </p>
+                <p>Qual a cor do equipamento principal do Benfica: <input type="color" name="nomeJ"></p>
+                <p>Quantidade de jogadores no plantel principal (de 0 a 100)<input type="range" id="vol" name="vol"
+                        min="0" max="100"></p>
+                <textarea name="ty" rows="3" cols="30">Obrigado por responder :)</textarea>
+                <p><input type="image" src="image/img_submit.png" alt="Submit" width="48" height="48"></p>
+
+
+
+
+
+
+
+
+
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
