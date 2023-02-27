@@ -26,75 +26,91 @@
             <a href="local.html">Localização</a>
             <a href="multimedia.html">Multimedia</a>
             <a href="info.html">Informação</a>
+            <a href="quizz.html">Quizz</a>
+            <a href="html5-css.html">HTML5 e CSS</a>
 
         </p>
     </nav>
-    <section>
+    <main>
+        <section>
 
-        <h3>
-            Quizz
-        </h3>
-
-        <p> Dentro desta página vai ser efectuado um quizz sobre o Benfica para testar os seus conhecimentos</p>
-
-        <form method="post" action="mailto:goncalo.coelhonunes@gmail.com" autocomplete="on">
-
-            <fieldset>
-                <legend> Quizz sobre o Benfica</legend>
-            </fieldset>
-
-            <fieldset>
-
-                <title>Info</title>
-                <p>Nome: <input type="text" name="nome" placeholder="Gonçalo" required></p>
-                <p>Apelido: <input type="text" name="apelido" placeholder="Nunes" required></p>
-                <p>Data de nascimento: <input type="date" name="data" required></p>
-                <p><input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                </p>
-                <p>E-mail: <input type="email" name="email" autocomplete="off" required></p>
-                <input type="submit" value="Envie os dados">
-
-            </fieldset>
-
-            <fieldset>
-
-                <title>Perguntas</title>
-                <p>Nome de um jogador: <input type="text" name="nomeJ">Número do jogador: <input type="number"
-                        name="nomeJ"></p>
-                <p>Ano de fundação do clube: <input type="number" name="ano" size="4" maxlength="4"> </p>
-                <p>Nº de Titulos na Primeira Liga(Escolha apenas uma opção): 34<input type="checkbox" name="nomeJ">
-                    35<input type="checkbox" name="nomeJ"> 36<input type="checkbox" name="nomeJ"> 37<input
-                        type="checkbox" name="nomeJ"></p>
-                <p>
-                    Nome do Presidente do clube <select name="pres">
-                        <option value="Jorge Jesus">Jorge Jesus</option>
-                        <option value="Mantorras">Mantorras</option>
-                        <option value="Rui Costa">Rui Costa</option>
-                        <option value="Eliseu">Eliseu</option>
-                    </select>
-                </p>
-                <p>
-                    Qual a mascote do clube <input list="mascotes" name="mascotes">
-                    <datalist id="mascotes">
-                        <option value="Leão">
-                        <option value="Águia">
-                        <option value="Dragão">
-                        <option value="Foca">
-                        <option value="Lontra">
-                    </datalist>
-                </p>
-                <p>Qual a cor do equipamento principal do Benfica: <input type="color" name="nomeJ"></p>
-                <p>Quantidade de jogadores no plantel principal (de 0 a 100)<input type="range" id="vol" name="vol"
-                        min="0" max="100"></p>
-                <textarea name="ty" rows="3" cols="30">Obrigado por responder :)</textarea>
-                <p><input type="image" src="image/img_submit.png" alt="Submit" width="48" height="48"></p>
-
-            </fieldset>
-        </form>
-    </section>
+            <h3>
+                Quizz
+            </h3>
+    
+            <p> Dentro desta página vai ser efectuado um quizz sobre o Benfica para testar os seus conhecimentos</p>
+    
+            <form method="post" action="mailto:goncalo.coelhonunes@gmail.com" autocomplete="on"
+                enctype="multipart/form-data">
+    
+                <fieldset>
+                    <legend> Quizz sobre o Benfica</legend>
+                </fieldset>
+    
+                <fieldset>
+    
+                    <title>Info</title>
+                    <p>Nome: <input type="text" name="nome" placeholder="Gonçalo" required autofocus></p>
+                    <p>Apelido: <input type="text" name="apelido" placeholder="Nunes" required></p>
+                    <p>Data de nascimento: <input type="date" name="data" required></p>
+                    <p><input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </p>
+                    <p>E-mail: <input type="email" name="email" autocomplete="off" required></p>
+                    <input type="submit" value="Envie os dados">
+    
+                </fieldset>
+    
+                <fieldset>
+    
+                    <title>Perguntas</title>
+                    <p>Nome de um jogador: <input type="text" name="nomeJ">Número do jogador: <input type="number"
+                            name="numberJ"></p>
+                    <p>Ano de fundação do clube: <input type="number" name="ano" size="4" maxlength="4" pattern="[1111]"{4}> </p>
+                    <p>Nº de Titulos na Primeira Liga(Escolha apenas uma opção): 34<input type="checkbox" name="nomeJ">
+                        35<input type="checkbox" name="nomeJ"> 36<input type="checkbox" name="nomeJ"> 37<input
+                            type="checkbox" name="nomeJ"></p>
+                    <p>
+                        Nome do Presidente do clube <select name="pres">
+                            <option value="Jorge Jesus">Jorge Jesus</option>
+                            <option value="Mantorras">Mantorras</option>
+                            <option value="Rui Costa">Rui Costa</option>
+                            <option value="Eliseu">Eliseu</option>
+                        </select>
+                    </p>
+                    <p>
+                        Qual a mascote do clube?(Escolha uma das opções)<input list="mascotes" name="mascotes">
+                        <datalist id="mascotes">
+                            <option value="Leão">
+                            <option value="Águia">
+                            <option value="Dragão">
+                            <option value="Foca">
+                            <option value="Lontra">
+                        </datalist>
+                    </p>
+                    <p>Qual a cor do equipamento principal do Benfica: <input type="color" name="nomeJ"></p>
+                    <p>Quantidade de jogadores no plantel principal (de 0 a 100)<input type="range" id="vol" name="vol"
+                            min="0" max="100"></p>
+    
+                    <p>
+                        <label for="champions">Quantas Champions o Benfica ganhou?</label>
+                        <select name="champions" id="champions" multiple>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </p>
+                    <textarea name="ty" rows="3" cols="30">Obrigado por responder😉</textarea>
+                    <p><input type="image" src="image/img_submit.png" alt="Submit" width="48" height="48"></p>
+    
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>Gonçalo Nunes, Nº22202617, Universidade Lusófona de Humanidades e Tecnologias, 2022/23 </footer>
 </body>
 
 </html>
